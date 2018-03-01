@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="hd" externalSystemModuleVersion="1.0-SNAPSHOT" linkedProjectId=":src" linkedProjectPath="$MODULE_DIR$/../../src" rootProjectPath="$MODULE_DIR$/../.." />
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../src">
+      <excludeFolder url="file://$MODULE_DIR$/../../src/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../src/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../src/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
