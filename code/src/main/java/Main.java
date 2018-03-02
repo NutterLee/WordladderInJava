@@ -12,14 +12,12 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         // write your code here
-        Set<String> dictionary = new HashSet<String>();
-        System.out.println(System.getProperty("user.dir"));
+        Set<String> dictionary = new HashSet<>();
         String filename = "dictionary.txt";
         String word1;
         String word2;
         Scanner sc = new Scanner(System.in);
         //read the dictionary file and store the words in the set
-        //File dic = new File("dictionary.txt");
         BufferedReader dic_reader= new BufferedReader(new FileReader(filename));
         String tmpword = null;
 
@@ -71,8 +69,6 @@ public class Main {
                 for(char character= 'a';character<='z';character++)
                 {
                     String new_word = tmp_word.replace(tmp_word.charAt(i),character);
-                    //System.out.println(new_word);
-                    //System.out.println(tmp_word);
                     if(word2.equals(new_word))
                     {
                         get_result=true;
@@ -85,7 +81,6 @@ public class Main {
                     }
                     if(!dictionary.contains(new_word)||new_word.equals(tmp_word)||word_collection.contains(new_word)) continue;
                     word_collection.add(new_word);
-                    //System.out.println(new_word);
                     Stack<String> tmp_stack2 = (Stack<String>) tmp_stack.clone();
                     tmp_stack2.push(new_word);
                     words.offer(tmp_stack2);
