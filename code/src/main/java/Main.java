@@ -100,4 +100,10 @@ public class Main {
         }
 
     }
+    public static boolean valid_word(String w1,String w2)
+    {
+       if(w1.equals(w2))
+           return false;
+       else return true;
+    }
 }
